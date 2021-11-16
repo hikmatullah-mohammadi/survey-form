@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+#title, #description {
+  width: 90%;
+  background-color: rosybrown;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#title {
+  margin-top: 20px;
+}
+
+#description {
+  margin-bottom: 10px;
+}
+
+#survey-form {
+  width: 90%;
+  padding: 20px;
+  border: red 1px groove;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #cacaca55;
+}
+
+fieldset {
+  border-radius: 10px;
+  margin: 20px;
+  background-color:rgb(153, 141, 173);
+  font-family:'Courier New', Courier, sans-serif;
+}
+button[type="submit"] {
+  align-content: center;
+  background-color: blue;
+  color: white;
+  margin-left: 90%;
+}
+
+fieldset *{
+  margin: 5px;
+}
+
+legend {
+  color: blue;
+  font-family: Verdana, Times, sans-serif;
+  font-weight: bold;
+}
+
+#name, #number, #email, #additional-comments, select {
+  width: 50%;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#additional-comments {
+  height: 90px;
+}
+
+@media (max-width: 800px){
+  #name, #number, #email, #additional-comments, select {
+    width: 90%;
+  } 
+  button[type="submit"]{
+    margin-left: 80%;
+  }
+}
+
+@media (min-width: 800px){
+  #name, #number, #email, #additional-comments, select {
+    width: 70%;
+  } 
+}
+@media (min-width: 1000px){
+  #name, #number, #email, #additional-comments, select {
+    width: 50%;
+  }
+}
